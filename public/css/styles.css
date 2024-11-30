@@ -1,0 +1,53 @@
+.add-user-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #000;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #d2cbcbda;
+}
+input {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    width: 300px;
+}
+label{
+    font-size: 16px;
+    font-weight: 700;
+}
+h2{
+    font-weight: 700;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.add-button-container {
+    padding: 8px 20px;
+    background-color: #1a56b6;
+    border-radius: 6px;
+    border: 0px;
+    color: #fafafa;
+    cursor: pointer;
+    outline: none;
+}
+.update-user-title{
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    font-family: sans-serif;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Update User</title>
+    </head>
+    <body>
+        <h1>Update User</h1>
+        <% results.forEach(result => { %>
+                <form action="/update-user" method="POST" class="form-container">
+                    <label>Fee Paid :</label>
+                    <input type="text" name="isValuationFeePaid" value="<%= result.user.isValuationFeePaid %>" placeholder="true or false..." required />
+                    <br>
+                    <label>UK Resident :</label>
+                    <input type="text" name="isUkResident" value="<%= result.user.isUkResident %>" placeholder="true or false..." required />
+                    <br>
+                    <label>Risk Rating :</label>
+                    <input type="text" name="riskRating" value="<%= result.user.riskRating %>" placeholder="Risk rating(Medium or Low)..." required />
+                    <br>
+                    <label>Loan Required :</label>
+                    <input type="number" name="loanRequired" value="<%= result.user.mortgage.loanRequired %>"  placeholder="Load required..." required />
+                    <br>
+                    <label>Property Value :</label>
+                    <input type="number" name="purchasePrice" value= "<%= result.user.mortgage.purchasePrice %>" placeholder="Property value..." required />
+                    <br>
+           
+                    <div class="button-container">
+                        <button type="submit" class="add-button-container">Add User</button>
+                    </div>
+                </form>
+       <% }); %>
+        
+    </body>
+</html>

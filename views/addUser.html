@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport",content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Add User</title>
+    </head>
+    <body>
+        <div class="add-user-main-container">
+        <h2>Add User</h2>
+        <form action="/add-user" method="POST" class="form-container">
+            <label>Username : </label>
+            <input type="text" name="username" placeholder="Username..." required />
+            <br>
+            <label>Fee Paid :</label>
+            <input type="text" name="isValuationFeePaid" placeholder="true or false..." required />
+             <br>
+            <label>UK Resident :</label>
+            <input type="text" name="isUkResident" placeholder="true or false..." required />
+             <br>
+            <label>Risk Rating :</label>
+            <input type="text" name="riskRating" placeholder="Risk rating(Medium or Low)..." required />
+             <br>
+            <label>Loan Required :</label>
+            <input type="number" name="loanRequired" placeholder="Load required..." required />
+            <br>
+            <label>Property Value :</label>
+            <input type="number" name="purchasePrice" placeholder="Property value..." required />
+            <br>
+           
+            <div class="button-container">
+                <button type="submit" class="add-button-container">Add User</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

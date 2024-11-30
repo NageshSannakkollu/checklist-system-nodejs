@@ -1,0 +1,4 @@
+GET http://localhost:3007/all-users
+
+### 
+GET http://localhost:3007/update-user/67339ae56d5231c1a2c63637
