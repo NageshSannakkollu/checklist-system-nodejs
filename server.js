@@ -20,11 +20,11 @@ app.listen(port,(() => {
 
 //DB Connection
 
-mongoose.connect('mongodb://localhost:27017/checklistSystem',{
+mongoose.connect("mongodb://localhost:27017/checklistSystem",{
     useNewUrlParser:true,
     useUnifiedTopology:true
-})
- 
+}).then(() => console.log("MongoDB connected Successfully"))
+.catch(err => console.log("Mongodb Connection Failed:",err))
 
 const rules = [
     {
