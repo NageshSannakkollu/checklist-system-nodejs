@@ -4,7 +4,7 @@ const app = express()
 const axios = require("axios")
 const bodyParser = require("body-parser");
 const { default: mongoose } = require("mongoose");
-const User = require("./models/User")
+const UserModel = require("./models/User");
 
 //middleware
 app.use(bodyParser.urlencoded({extended:true}))
@@ -97,8 +97,8 @@ app.post("/add-user",async(request,response) => {
 //Get all Users from Mongodb
 
 app.get("/all-users",async(req,res) => {
-    const getAllUsers = await User.find()
-    // res.send(getAllUsers)
+    const getAllUsers = await UserModel.find()
+    res.send(getAllUsers)
     res.render('userList',{getAllUsers})
 })
 
